@@ -23,4 +23,4 @@ jobs:
       - name: Test
         run: go test -v -cover ./...
       - name: BenchmarkTest
-        run: go test -benchmem -run=none ^BenchmarkTest -bench sol/sol
+        run: go test -benchmem -run=none -bench ^BenchmarkTest  sol/sol
